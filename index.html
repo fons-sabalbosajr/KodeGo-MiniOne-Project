@@ -6,14 +6,20 @@
 
     <!-- ICONS -->
     <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      rel="shorcut icon"
+      href="assets/img/icons8-home-48.png"
+      type="image/x-icon"
     />
-    <!-- SWIPER STYLES -->
-    <link rel="stylesheet" href="" />
-
+    <!-- BOX ICONS FOR ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- SWIPER STYLES -->
+    <link rel="stylesheet" href="" />
 
     <title>KodeGo-MiniOne-Project</title>
   </head>
@@ -21,55 +27,116 @@
     <!-- HEADER -->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Fons</a>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
+        <a href="#" class="nav__logo">Alpha Clark<i class="bx bxs-home"></i></a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
             <li class="nav__item">
               <a href="#home" class="nav__link">
-                <i class="uil uil-estate"></i> Home
+                <i class="bx bx-home-alt-2"></i>
+                <span>Home</span>
               </a>
             </li>
 
             <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user"></i> About
+              <a href="#popular" class="nav__link">
+                <i class="bx bx-building-house"></i>
+                <span>Residences/Houses</span>
               </a>
             </li>
 
             <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file-info-alt"></i> Skills
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#services" class="nav__link">
-                <i class="uil uil-suitcase-alt"></i> Services
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery"></i> Portfolio
+              <a href="#value" class="nav__link">
+                <i class="bx bx-award"></i>
+                <span>Value</span>
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="uil uil-message"></i> Reach Me
+                <i class="bx bx-phone"></i>
+                <span>Contact</span>
               </a>
             </li>
           </ul>
         </div>
+
+        <a href="#" class="button nav__button"> Subscribe </a>
       </nav>
     </header>
 
     <!-- MAIN -->
-    <main class="main"></main>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Explore <br />
+              Most Suitable <br />
+              Property
+            </h1>
+            <p class="home__description">
+              Look for a variety of properties that suit you conviniently,
+              forget all difficulties in finding your dream home for you.
+            </p>
+
+            <form action="" class="home__search">
+              <i class="bx bxs-map"></i>
+              <input
+                type="search"
+                placeholder="Search by location"
+                class="home__search-input"
+              />
+              <button class="button">Search</button>
+            </form>
+
+            <div class="home__value">
+              <div>
+                <h1 class="home__value-number">100K <span>+</span></h1>
+                <span class="home__value-description">
+                  Premium <br />
+                  Product
+                </span>
+              </div>
+
+              <div>
+                <h1 class="home__value-number">10K <span>+</span></h1>
+                <span class="home__value-description">
+                  Satisfied <br />
+                  Customers
+                </span>
+              </div>
+
+              <div>
+                <h1 class="home__value-number">50K <span>+</span></h1>
+                <span class="home__value-description">
+                  Awards <br />
+                  Winning
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home__images">
+            <div class="home__orbe">
+              <div class="home__img">
+                <img src="assets/img/home.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo section" id="home"></section>
+
+      <section class="section" id="popular"></section>
+    </main>
     <!-- FOOTER -->
 
-    <!-- SCROLL TOP -->
-
+    <!-- SCROLLING UP -->
+    <script src=""></script>
+    <!-- SCROLLING REVEAL -->
+    <script src=""></script>
     <!-- SWIPER JS STYLES -->
     <script src=""></script>
     <!-- MAIN JS -->
