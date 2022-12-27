@@ -199,6 +199,16 @@ button {
   display: none;
 }
 
+/* change bg header */
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 1px 4px hsla(228, 4%, 15%, 0.1);
+}
+
+.scroll-header .nav__logo {
+  color: var(--first-color);
+}
+
 /* HOME */
 .home {
   background: linear-gradient(170deg, hsl(0, 0%, 22%) 0%, hsl(0, 0%, 6%) 30%);
@@ -301,7 +311,7 @@ button {
   box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
 }
 
-/* BUTTONS */
+/* HOME */ /* HOME */
 .button {
   display: inline-block;
   background: linear-gradient(101deg, hsl(228, 66%, 53%), hsl(228, 66%, 47%));
@@ -321,4 +331,12 @@ button {
 
 .nav__button {
   display: none;
+}
+
+/* LOGOS */
+.logo__container {
+  padding-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 2rem;
+  justify-items: center;
 }
