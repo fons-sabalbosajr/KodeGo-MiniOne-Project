@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- SWIPER STYLES -->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <title>KodeGo-MiniOne-Project</title>
   </head>
@@ -27,13 +27,26 @@
     <!-- HEADER -->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Alpha Clark<i class="bx bxs-home"></i></a>
+        <a href="#" class="nav__logo">
+          <img
+            src="/assets/img/home_icon_logo.png"
+            width="25"
+            height="25"
+            alt="Home_Icon"
+          />
+          Alpha Clark</a
+        >
 
         <div class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#home" class="nav__link">
-                <i class="bx bx-home-alt-2"></i>
+                <img
+                  src="/assets/img/home_icon_logo.png"
+                  width="23"
+                  height="23"
+                  alt="Home_Icon"
+                />
                 <span>Home</span>
               </a>
             </li>
@@ -145,58 +158,84 @@
         </div>
       </div>
 
+      <!-- POPULAR PRODUCTS -->
       <section class="section" id="popular">
         <div class="container">
           <span class="section__subtitle">Best Choice</span>
           <h2 class="section__title">Popular Residences<span>.</span></h2>
 
-          <div class="popular container">
-            <article class="popular__article">
-              <img src="assets/img/popular1.jpg" alt="" class="popular__img" />
-              <div class="popular__data">
-                <h2 class="popular__price"><span>Php </span>5.35M</h2>
-                <h3 class="popular__title">White House</h3>
-                <p class="popular__description">
-                  The White Modern Minimalistic House, Diamond St., Solana
-                  Verde, Clark, Pampanga 2024
-                </p>
-              </div>
-            </article>
+          <div class="popular__container swiper">
+            <div class="swiper-wrapper">
+              <article class="popular__article swiper-slide">
+                <img
+                  src="assets/img/popular1.jpg"
+                  alt=""
+                  class="popular__img"
+                />
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>Php </span>5.35M</h2>
+                  <h3 class="popular__title">White House</h3>
+                  <p class="popular__description">
+                    The White Modern Minimalistic House, Diamond St., Solana
+                    Verde, Clark, Pampanga 2024
+                  </p>
+                </div>
+              </article>
 
-            <article class="popular__article">
-              <img src="assets/img/popular2.jpg" alt="" class="popular__img" />
-              <div class="popular__data">
-                <h2 class="popular__price"><span>Php </span>7.0M</h2>
-                <h3 class="popular__title">Athena's Garden</h3>
-                <p class="popular__description">
-                  Street The Garden City of Athena, Flores St. Camella Homes,
-                  Clark, Pampanga 2026
-                </p>
-              </div>
-            </article>
+              <article class="popular__article swiper-slide">
+                <img
+                  src="assets/img/popular2.jpg"
+                  alt=""
+                  class="popular__img"
+                />
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>Php </span>7.0M</h2>
+                  <h3 class="popular__title">Athena's Garden</h3>
+                  <p class="popular__description">
+                    Street The Garden City of Athena, Flores St. Camella Homes,
+                    Clark, Pampanga 2026
+                  </p>
+                </div>
+              </article>
 
-            <article class="popular__article">
-              <img src="assets/img/popular3.jpg" alt="" class="popular__img" />
-              <div class="popular__data">
-                <h2 class="popular__price"><span>Php </span>5.65M</h2>
-                <h3 class="popular__title">Wooden Livin' in the Forest</h3>
-                <p class="popular__description">
-                  Wooden Livin' on a Forest Minimalistic House, Diamond St.,
-                  Solana Verde, Clark, Pampanga 2024
-                </p>
-              </div>
-            </article>
+              <article class="popular__article swiper-slide">
+                <img
+                  src="assets/img/popular3.jpg"
+                  alt=""
+                  class="popular__img"
+                />
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>Php </span>5.65M</h2>
+                  <h3 class="popular__title">Wooden Livin' in the Forest</h3>
+                  <p class="popular__description">
+                    Wooden Livin' on a Forest Minimalistic House, Diamond St.,
+                    Solana Verde, Clark, Pampanga 2024
+                  </p>
+                </div>
+              </article>
 
-            <article class="popular__article">
-              <img src="assets/img/popular4.jpg" alt="" class="popular__img" />
-              <div class="popular__data">
-                <h2 class="popular__price"><span>Php </span>6.4M</h2>
-                <h3 class="popular__title">Home Tropicana</h3>
-                <p class="popular__description">
-                  Tropical House, Camella Homes, Clark, Pampanga
-                </p>
-              </div>
-            </article>
+              <article class="popular__article swiper-slide">
+                <img
+                  src="assets/img/popular4.jpg"
+                  alt=""
+                  class="popular__img"
+                />
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>Php </span>6.4M</h2>
+                  <h3 class="popular__title">Home Tropicana</h3>
+                  <p class="popular__description">
+                    Tropical House, Camella Homes, Clark, Pampanga
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-chevron-left"></i>
+            </div>
           </div>
         </div>
       </section>
@@ -208,7 +247,7 @@
     <!-- SCROLLING REVEAL -->
     <script src=""></script>
     <!-- SWIPER JS STYLES -->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
   </body>

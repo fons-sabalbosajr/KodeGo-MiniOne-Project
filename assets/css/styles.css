@@ -1,5 +1,5 @@
 /* FONT STYLES */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 :root {
   --header-height: 3.5rem;
 
@@ -17,7 +17,7 @@
   --container-color: #fff;
 
   /* FONTS */
-  --body-font: "Poppins", sans-serif;
+  --body-font: 'Poppins', sans-serif;
   --big-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -366,7 +366,7 @@ button {
 }
 
 .popular__img {
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -395,4 +395,34 @@ button {
 
 .popular__article:hover {
   box-shadow: 0 12px 16px hsla(228, 66%, 45%, 0.1);
+}
+
+/* SWIPER CSS STYLES */
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: initial;
+  //bottom: 0;
+  width: initial;
+  height: initial;
+  background-color: var(--container-color);
+  border: 2px solid var(--text-color-light);
+  padding: 6px;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  align-items: center;
+}
+
+.swiper-button-prev {
+  left: calc(50% - 3rem);
+}
+
+.swiper-button-next {
+  right: calc(50% - 3rem);
 }
