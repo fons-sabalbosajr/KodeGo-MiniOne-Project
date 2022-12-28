@@ -339,6 +339,7 @@ button {
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem 2rem;
   justify-items: center;
+  //margin: 4rem auto;
 }
 
 .logo__img img {
@@ -361,7 +362,7 @@ button {
   background-color: var(--container-color);
   padding: 0.5rem 0.5rem 1.5rem;
   border-radius: 1rem;
-  margin: 4rem auto;
+  margin: 0 0 3.5rem 0;
   transition: 0.4s;
 }
 
@@ -385,7 +386,7 @@ button {
 }
 
 .popular__title {
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
   margin-bottom: 0.25rem;
 }
 
@@ -417,7 +418,7 @@ button {
   font-size: 1.5rem;
   color: var(--first-color);
   align-items: center;
-  margin-bottom: auto;
+  margin: 0 auto;
 }
 
 .swiper-button-prev {
@@ -442,7 +443,7 @@ button {
 .value__orbe {
   width: 266px;
   height: 316px;
-  background-color: rgb(228, 24%, 97%);
+  background-color: hsl(228, 24%, 97%);
   border-radius: 135px 135px 16px 16px;
 }
 
@@ -455,4 +456,85 @@ button {
   inset: 0;
   margin: auto;
   box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
+}
+
+.value__description {
+  font-size: var(--small-font);
+  margin-bottom: 2rem;
+}
+
+.value__accordion {
+  display: grid;
+  row-gap: 1.5rem;
+  //margin-bottom: 5rem; ---for footer in case of no margin
+}
+
+.value__accordion-item {
+  background-color: var(--body-color);
+  border: 2px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1rem, 0.75rem;
+}
+
+.value__accordion-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.value__accordion-icon {
+  background-color: var(--first-color-lighten);
+  padding: 5px;
+  border-radius: 0.25rem;
+  font-size: 18px;
+  color: var(--first-color);
+  margin-right: 0.75rem;
+  transition: 0.3s;
+}
+
+.value__accordion-title {
+  font-size: var(--small-font);
+}
+
+.value__accordion-arrow {
+  display: inline-flex;
+  background-color: var(--first-color-lighten);
+  padding: 0.25rem;
+  color: var(--first-color);
+  border-radius: 2px;
+  font-size: 10px;
+  margin-left: auto;
+  transition: 0.3s;
+}
+
+.value__accordion-arrow i {
+  transition: 0.4s;
+}
+
+.value__accordion-description {
+  font-size: var(--smaller-font);
+  padding: 1.25rem 2.5rem 0 2.75rem;
+}
+
+.value__accordion-content {
+  overflow: hidden;
+  height: 0;
+  transition: all 0.25s ease;
+}
+
+/* ICON STYLES AND SHADOWS */
+.accordion-open {
+  box-shadow: 0 12px 32px hsla(228, 66%, 45%, 0.1);
+}
+
+.accordion-open .value__accordion-icon {
+  box-shadow: 0 4px 4px hsla(228, 66%, 45%, 0.1);
+}
+
+.accordion-open .value__accordion-arrow {
+  box-shadow: 0 2px 4px hsla(228, 66%, 45%, 0.1);
+}
+
+.accordion-open .value__accordion-arrow i {
+  transform: rotate(-180deg);
 }
