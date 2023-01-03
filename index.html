@@ -40,9 +40,10 @@
         <div class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">
+              <a href="#home" class="nav__link active-link">
                 <img
                   src="/assets/img/home_icon_logo.png"
+                  class="nav__logo-home"
                   width="23"
                   height="23"
                   alt="Home_Icon"
@@ -54,7 +55,7 @@
             <li class="nav__item">
               <a href="#popular" class="nav__link">
                 <i class="bx bx-building-house"></i>
-                <span>Residences/Houses</span>
+                <span>Houses</span>
               </a>
             </li>
 
@@ -73,6 +74,9 @@
             </li>
           </ul>
         </div>
+
+        <!-- Themes -->
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
 
         <a href="#" class="button nav__button"> Subscribe </a>
       </nav>
@@ -544,7 +548,10 @@
     </footer>
 
     <!-- SCROLLING UP -->
-    <script src=""></script>
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-chevrons-up"></i>
+    </a>
+
     <!-- SCROLLING REVEAL -->
     <script src=""></script>
     <!-- SWIPER JS STYLES -->
