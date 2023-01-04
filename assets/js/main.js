@@ -92,7 +92,7 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-
 
 //validate  if the user chose the topic
 if(selectedTheme){
-    document.body.classList[selectedTHeme === 'dark' ? 'add' : 'remove'](darkTheme)
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
     themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
