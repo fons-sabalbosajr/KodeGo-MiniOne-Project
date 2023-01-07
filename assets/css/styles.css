@@ -421,17 +421,76 @@ body.dark-theme {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem 1rem;
   justify-items: center;
-  //margin: 4rem auto;
 }
 
 .logo__img img {
   height: 100px;
   opacity: 0.3;
   transition: 0.3s;
+  padding-right: 1rem;
+  perspective: 100%;
+  place-items: center;
 }
 
 .logo__img img:hover {
   opacity: 0.9;
+  transition: transform 1%;
+}
+
+/* LOGO SLIDER */
+
+.slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    solid black 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 60s linear infinite;
+  display: flex;
+  width: calc(250px * 12);
+}
+
+.slider .slide-track:hover {
+  animation-play-state: running;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 6));
+  }
 }
 
 /* RESIDENCE PICS POPULARS */
@@ -1204,10 +1263,6 @@ body.dark-theme {
   .contact__card {
     grid-template-columns: repeat(2, 205px);
   }
-
-  /*.contact__card-box {
-    padding: 28px 1.5rem 1.5rem;
-  }*/
 
   .subscribe__container {
     padding: 4rem 10rem 4.5rem;
