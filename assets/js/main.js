@@ -110,9 +110,8 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2500,
-    delay: 400,
-    //reset: true
-
+    delay: 350,
+    reset: true
 })
 
 sr.reveal('.home__title, .popular__container, .subscribe__container, .footer__container')
